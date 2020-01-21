@@ -157,7 +157,7 @@ class Ps_Checkpayment extends PaymentModule
 
         $newOption = new PaymentOption();
         $newOption->setModuleName($this->name)
-                ->setCallToActionText($this->trans('Pay by Check', array(), 'Modules.Checkpayment.Admin'))
+                ->setCallToActionText($this->trans('Pay by Mpesa', array(), 'Modules.Checkpayment.Admin'))
                 ->setAction($this->context->link->getModuleLink($this->name, 'validation', array(), true))
                 ->setAdditionalInformation($this->fetch('module:ps_checkpayment/views/templates/front/payment_infos.tpl'));
 
@@ -219,7 +219,7 @@ class Ps_Checkpayment extends PaymentModule
                 'input' => array(
                     array(
                         'type' => 'text',
-                        'label' => $this->trans('Payee (name)', array(), 'Modules.Checkpayment.Admin'),
+                        'label' => $this->trans('Order Number (name)', array(), 'Modules.Checkpayment.Admin'),
                         'name' => 'CHEQUE_NAME',
                         'required' => true
                     ),

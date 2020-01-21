@@ -28,10 +28,11 @@
     <dl>
       <dt>{l s='Amount' d='Modules.Checkpayment.Shop'}</dt>
       <dd>{$checkTotal}</dd>
-      <dt>{l s='Payee' d='Modules.Checkpayment.Shop'}</dt>
+      <dt>{l s='Order Number' d='Modules.Checkpayment.Shop'}</dt>
       <dd>{$checkOrder}</dd>
-      <dt>{l s='Send your check to this address' d='Modules.Checkpayment.Shop'}</dt>
+      <dt>{l s='Buy goods Number' d='Modules.Checkpayment.Shop'}</dt>
       <dd>{$checkAddress nofilter}</dd>
+     
     </dl>
   </p>
 </section>
